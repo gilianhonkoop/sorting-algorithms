@@ -1,0 +1,20 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.App-header {
+    @include flex-column;
+    background-color: #282c34;
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+.visualization {
+  @include flex-column;
+  width: 100vw;
+  height: 40vh;
+}

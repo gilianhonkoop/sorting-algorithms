@@ -1,0 +1,22 @@
+@mixin flex-column {
+    display: flex;
+    align-items: center;
+  }
+
+.array-container {
+    @include flex-column;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 9vh;
+    width: 60vw;
+}
+
+.block {
+    @include flex-column;
+    flex-direction: column;
+    justify-content: center;
+    height: 9vh;
+    width: 9vh;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+}
